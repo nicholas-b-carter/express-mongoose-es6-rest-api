@@ -1,8 +1,8 @@
 {
-  "name": "express-mongoose-es6-rest-api",
+  "name": "hamilton-api",
   "version": "1.0.0",
-  "description": "A Boilerplate application for building REST APIs using express, mongoose in ES6 with code coverage",
-  "author": "Kunal Kapadia <kunalkapadia12@gmail.com>",
+  "description": "Sysco bots POC",
+  "author": "Nicholas Carter <nicholas.b.carter@gmail.com>",
   "main": "index.js",
   "private": false,
   "engines": {
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KunalKapadia/express-mongoose-es6-rest-api.git"
+    "url": "git@github.com:nicholas-b-carter/hamilton-api.git"
   },
   "keywords": [
     "express",
@@ -34,8 +34,7 @@
     "mocha",
     "istanbul",
     "REST",
-    "API",
-    "boilerplate"
+    "API"
   ],
   "dependencies": {
     "bluebird": "3.4.6",
