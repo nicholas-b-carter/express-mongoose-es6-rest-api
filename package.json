@@ -18,7 +18,9 @@
     "test": "NODE_ENV=test babel-node node_modules/.bin/isparta cover _mocha -- --ui bdd --reporter spec --colors --compilers js:babel-core/register ./server/**/*.test.js",
     "test:watch": "yarn test -- --watch",
     "test:check-coverage": "yarn test && istanbul check-coverage",
-    "report-coverage": "coveralls < ./coverage/lcov.info"
+    "report-coverage": "coveralls < ./coverage/lcov.info",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -54,7 +56,8 @@
     "method-override": "^2.3.5",
     "mongoose": "4.7.4",
     "morgan": "1.7.0",
-    "winston": "2.3.0"
+    "winston": "2.3.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",
@@ -103,5 +106,6 @@
     "plugins": [
       "add-module-exports"
     ]
-  }
+  },
+  "snyk": true
 }
